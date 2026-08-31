@@ -29,14 +29,18 @@ Om man inte har Ubuntu eller ROS 2 installerat lokalt körs noderna smidigast vi
 
 # Kopiera in paketen från lokala mapp till containerns src
 ` docker cp ./exercise1/package1 ros_jazzy:/root/kthfs_ws/src/ `
+
 ` docker cp ./exercise1/package2 ros_jazzy:/root/kthfs_ws/src/ `
 
 4.
 container-terminalen (där prompten visar root@...), kör följande:
 
 ` cd /root/kthfs_ws `
+
 ` source /opt/ros/jazzy/setup.bash `
+
 ` colcon build --symlink-install `
+
 ` source install/setup.bash `
 
 5. Kör noderna i tre terminaler
@@ -46,25 +50,37 @@ Terminal 1 (Kör NodeA):
 
 
 ` docker exec -it ros_jazzy /bin/bash `
+
 ` source /opt/ros/jazzy/setup.bash `
+
 ` source ~/kthfs_ws/install/setup.bash `
+
 ` ros2 run package1 nodeA `
 
 Terminal 2 (Kör NodeB):
 
 
 ` docker exec -it ros_jazzy /bin/bash `
+
 ` source /opt/ros/jazzy/setup.bash `
+
 ` source ~/kthfs_ws/install/setup.bash `
+
 ` ros2 run package2 nodeB `
+
 
 Terminal 3 (Verifiera data & 20 Hz):
 
 ` docker exec -it ros_jazzy /bin/bash `
+
 ` source /opt/ros/jazzy/setup.bash `
+
 ` source ~/kthfs_ws/install/setup.bash `
+
 ` ros2 topic hz /nader ` 
+
 ` ros2 topic echo /kthfs/result `
+
 
 ------------------------------------------------------------------
 
