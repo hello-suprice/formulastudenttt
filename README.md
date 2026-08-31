@@ -84,7 +84,7 @@ Terminal 3 (Verifiera data & 20 Hz):
 
 ------------------------------------------------------------------
 
-Exercise 2: Data Visualisation
+## Exercise 2: Data Visualisation
 
 # Installera bibliotek
 pip install numpy matplotlib
