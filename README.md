@@ -44,7 +44,7 @@ container-terminalen (där prompten visar root@...), kör följande:
 ` source install/setup.bash `
 
 5. Kör noderna i tre terminaler
-Öppna tre separata terminaler på din dator och anslut till containern:
+Öppna 4 separata terminaler på din dator och anslut till containern:
 
 Terminal 1 (Kör NodeA):
 
@@ -78,6 +78,15 @@ Terminal 3 (Verifiera data & 20 Hz):
 ` source ~/kthfs_ws/install/setup.bash `
 
 ` ros2 topic hz /nader ` 
+
+` ros2 topic echo /kthfs/result `
+
+Terminal 3.1 (Verifiera data & 20 Hz):
+` docker exec -it ros_jazzy /bin/bash `
+
+` source /opt/ros/jazzy/setup.bash `
+
+` source ~/kthfs_ws/install/setup.bash ` 
 
 ` ros2 topic echo /kthfs/result `
 
