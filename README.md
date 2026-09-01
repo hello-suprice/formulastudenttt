@@ -44,7 +44,7 @@ container-terminalen (där prompten visar root@...), kör följande:
 ` source install/setup.bash `
 
 5. Kör noderna i tre terminaler
-Öppna tre separata terminaler på din värddator och anslut till containern:
+Öppna tre separata terminaler på din dator och anslut till containern:
 
 Terminal 1 (Kör NodeA):
 
