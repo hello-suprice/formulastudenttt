@@ -81,6 +81,7 @@ Terminal 3 (Verifiera data & 20 Hz):
 ` ros2 topic hz /nader ` 
 
 Terminal 3.1 (Verifiera data & 20 Hz):
+
 `Ctrl+c` 
 
 ` ros2 topic echo /kthfs/result `
