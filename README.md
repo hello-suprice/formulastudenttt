@@ -81,11 +81,7 @@ Terminal 3 (Verifiera data & 20 Hz):
 ` ros2 topic hz /nader ` 
 
 Terminal 3.1 (Verifiera data & 20 Hz):
-` docker exec -it ros_jazzy /bin/bash `
-
-` source /opt/ros/jazzy/setup.bash `
-
-` source ~/kthfs_ws/install/setup.bash ` 
+`Ctrl+c` 
 
 ` ros2 topic echo /kthfs/result `
 
